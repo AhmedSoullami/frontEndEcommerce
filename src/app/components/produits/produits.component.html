@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<h3 style="align-items: center;">Listes Des Produits</h3>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Nom du produit</th>
+        <th>Prix du produit</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let produit of produits;let i = index">
+        <td>{{ produit.name }}</td>
+        <td>{{ produit.price }} DH</td>
+        
+        <td>
+            <button class="btn btn-warning input-button" title="Modifier">
+                <i class="fas fa-edit"></i>
+            </button>
+            <button class="btn btn-danger input-button" title="Supprimer">
+                <i class="fas fa-trash-alt"></i>
+            </button>
+        </td>
+        
+      </tr>
+    </tbody>
+  </table>

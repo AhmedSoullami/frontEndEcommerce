@@ -1,0 +1,15 @@
+<div class="container d-flex justify-content-center align-items-center" id="container">
+    <div class="form-container sign-up-container"></div>
+    <div class="form-container sign-in-container" style="border-color: black;">
+        <form class="card shadow-1-strong" [formGroup]="formLogin" (ngSubmit)="onLogin()">
+            <h3 class="mb-3">Sign in</h3>
+            <div class="inputs">
+              <input formControlName="email" type="email" class="form-control" placeholder="Email"  />
+              <input type="password" placeholder="Password" formControlName="passwd" />
+              <button type="submit">Sign In</button>
+            </div>
+          </form>
+          
+    </div>
+  </div>
+  
