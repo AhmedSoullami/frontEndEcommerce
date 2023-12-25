@@ -1,0 +1,26 @@
+/* categorie.component.css */
+
+.container {
+    margin: 20px;
+  }
+  
+  h2 {
+    color: #009688;
+  }
+  
+  mat-list {
+    width: 100%;
+  }
+  
+  mat-list-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  button {
+    margin-left: 10px;
+  }
+  

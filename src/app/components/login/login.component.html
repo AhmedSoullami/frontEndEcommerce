@@ -1,4 +1,5 @@
-<div class="container d-flex justify-content-center align-items-center" id="container">
+<app-navbar></app-navbar>
+<div class="container d-flex justify-content-center align-items-center" id="container" style="margin-top: 50px;">
     <div class="form-container sign-up-container"></div>
     <div class="form-container sign-in-container" style="border-color: black;">
         <form class="card shadow-1-strong" [formGroup]="formLogin" (ngSubmit)="onLogin()">

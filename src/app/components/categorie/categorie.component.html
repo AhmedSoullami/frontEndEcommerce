@@ -1,0 +1,38 @@
+
+<app-navbar></app-navbar>
+<div class="container" style="margin-top: 120px;">
+    <h2>List of Categories</h2>
+  
+    <div *ngIf="categories.length > 0; else noCategories">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Category Name</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            <th>Voir Produits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let category of categories">
+            
+            <td>{{ category.nomCatgorie }}</td>
+            <td>
+              <button class="btn btn-primary" (click)="onModifier(category)">Edit</button>
+            </td>
+            <td>
+              <button class="btn btn-danger" (click)="onSupprimer(category)">Delete</button>
+            </td>
+            <td>
+                <button class="btn btn-success" (click)="onVoirProduits(category.id)">Produits</button>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <ng-template #noCategories>
+      <p>No categories available.</p>
+    </ng-template>
+  </div>
+  

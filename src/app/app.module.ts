@@ -11,11 +11,13 @@ import { LoginService } from './services/login.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ProduitsComponent } from './components/produits/produits.component';
 import { RegisterComponent } from './components/register/register.component';
+import { CategorieComponent } from './components/categorie/categorie.component';
 const routes: Routes = [
 {path:'index',component:NavbarComponent},
 {path:'login',component:LoginComponent},
 {path:'produits',component:ProduitsComponent},
 {path:'register',component:RegisterComponent},
+{path:'categories',component:CategorieComponent},
 {
   path:'',
   redirectTo:'/index',
@@ -29,7 +31,8 @@ const routes: Routes = [
     NavbarComponent,
     LoginComponent,
     ProduitsComponent,
-    RegisterComponent
+    RegisterComponent,
+    CategorieComponent
   ],
   imports: [
     BrowserModule,
